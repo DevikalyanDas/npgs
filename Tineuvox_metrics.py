@@ -165,11 +165,8 @@ scens = ['standup']
 estim_dir = os.path.join(data_path,'renders')
 gt_dir = os.path.join(data_path,'gt')
 
-# estim_dir = os.path.join('/BS/keytr_neus/work/supplementary/gs/gaussian_splatting_my_1/output/synthetic_cactus_500_1/test/ours_70000','renders_99')
-# gt_dir = os.path.join('/BS/keytr_neus/work/devi_work/dataset/synthetic_catcus/new_test/27','test_white')
-
-# estim_dir = os.path.join('/BS/keytr_neus/work/supplementary/gs/gaussian_splatting_my_1/output/hypernerf_chicken_5/test/ours_70000','renders')
-# gt_dir = os.path.join('/BS/keytr_neus/work/supplementary/gs/gaussian_splatting_my_1/output/hypernerf_chicken_2/test/metrics','rgb')
+estim_dir = # path to your rendered images
+gt_dir = # path to your gt images
 
 estim = read_images_in_dir(estim_dir)
 gt = read_images_in_dir(gt_dir)
