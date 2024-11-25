@@ -11,7 +11,7 @@ Saarland University, Saarland Informatics Campus, Germany and Max Planck Institu
 ### 1. Install dependencies
 Use the below command
 ```
-conda env create -f environment_1.yml
+mamba env create --file env.yaml
 ```
 ### 2. Download model weights
 You can check the test images used in the paper and also download model weights from this [link](https://drive.google.com/drive/folders/1CeRQDJ5hJXXtYYf3AzDzMpsE8cEQ8qO1?usp=sharing)
