@@ -19,7 +19,7 @@ You can check the test images used in the paper and also download model weights 
 ### 3. Download data
 You can download D-NeRF data from the [here](https://www.dropbox.com/scl/fi/cdcmkufncwcikk1dzbgb4/data.zip?rlkey=n5m21i84v2b2xk6h7qgiu8nkg&e=1&dl=0) and UB4D data from [here](https://drive.google.com/drive/folders/1lFhLqeNjslqgIuRpQnUlHbd5-56vaDNE)
 
-### 4. Stage 1:Train on a monocular video
+### 4. Stage 1: Train on a monocular video
 To train on a video for estimating the coarse 3D point clouds
 ```
 python stage_1/run_train.py \
@@ -29,14 +29,21 @@ python stage_1/run_train.py \
     -g 0 \
     -m train
 ```
-### 5. Stage 1: Extract Point Cloud 
+### 5. Stage 1: Extract point cloud 
 To extract point clouds after training on a video or use the weights provided to extract the point cloud for DNeRF/UB4D
 ```
 python stage_1/run_test.py \
-    -c <path to the dataset directory> \
+    -c <path to the config file> \
     -w <path to save the experiments/logs> \
-    -d <path to the config file> \
+    -d <path to the dataset directory> \
     -g 0 \
     -m test \
     --test_iteration <iteration number>
+```
+### 6. Stage 2: Train Gaussian splatting 
+To train Gaussian splatting for skinning Gaussians on top of the estimated point cloud.
+```
+python stage_2/train.py \
+    -s <path to the dataset directory> \
+    -m <path to save the experiments/logs>
 ```
