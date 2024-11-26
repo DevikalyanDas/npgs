@@ -1,0 +1,60 @@
+#dataset
+render_cameras_name: projection_matrix.npz
+
+factor: 1
+novel_cameras_name: transforms_test
+novel_pose_available: True
+novel_pose: False
+novel_pose_idx: 6
+novel_time: False
+novel_time_idx: 16
+ref_frame: 8
+
+image_height: 800
+image_width: 800
+num_frames: 200 
+norm_data: 200 # same as num_frames except for synthetic human
+
+case_pose: dnerf
+## train
+learning_rate: 0.0005
+learning_rate_alpha: 0.05
+random_seed: 123
+batch_size: 10
+pt_cld_grp: True
+
+# Info about Iterations, logging and saving
+num_iter: 100001
+report_freq: 5000
+save_freq: 5000
+warm_up_end: 5000
+logging: 1000 
+
+## loss weights
+w_asgn: 0.1  #sinkhorn loss
+w_flow: 10.0  #flow loss
+w_d_plus: 100.0  # positive depth loss
+w_cd: 5.0 #chamfer distance loss weight 10.0 was given in paper 
+w_rgb: 1000.0  #rgb loss initial-1.0
+w_d_kp: 50000000.0 # local rigidity
+
+## pytorch3d rasterizer
+radius: 0.075
+pts_per_pixel: 5
+
+## Basis and MLP
+weight_init_std: 0.01
+key_points_no: 5000
+num_candidate: 1000
+shape_basis_size: 30
+color_basis_size: 25
+n_fully_connected: 512
+initial_dim: 1  # time dimension
+n_layers: 6
+phi_vector_dim: 50
+num_positional_encoding: 6
+
+# Find K elements of the nearest neighbor in local rigidity loss
+k_nn: 10
+
+fps: 10
