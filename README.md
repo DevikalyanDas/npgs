@@ -7,7 +7,7 @@ Saarland University, Saarland Informatics Campus, Germany and Max Planck Institu
 
 #### The source code release is ongoing. Sorry for the delay. Please have patience!!!
 
-## Setup (with [conda](https://docs.conda.io/en/latest/))
+## Setup (with [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html))
 ### 1. Install dependencies
 Use the below command
 ```
