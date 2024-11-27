@@ -190,7 +190,6 @@ class Runner:
         # Same for all frames. Defining the deformaton basis. b_dim = bat_size x basis_size X (3*n_keypoints)
         self.deformation_basis = torch.randn(size=(1,self.shape_basis_size, 3,self.n_keypoints),device=self.device)
         self.deformation_basis = torch.nn.functional.normalize(self.deformation_basis,dim=1)
-        # self.deformation_basis = torch.nn.functional.normalize(self.deformation_basis,dim=2)
         self.deformation_basis = torch.tensor(self.deformation_basis,requires_grad =True)       
         # For color basis
         # self.color_basis = torch.randn(size=(1,self.color_basis_size,self.n_keypoints),device=self.device)           
