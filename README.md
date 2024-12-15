@@ -48,4 +48,32 @@ To train Gaussian splatting for skinning Gaussians on top of the estimated point
 python stage_2/train.py \
     -s <path to the dataset directory> \
     -m <path to save the experiments/logs>
+    --npg_config <path to the config file for stage 2>
+```
+### . Stage 2: Render Gaussian splatting 
+To train Gaussian splatting for skinning Gaussians on top of the estimated point cloud.
+```
+python stage_2/render.py \
+    -s <path to the dataset directory> \
+    -m <path to save the experiments/logs>
+    --npg_config <path to the config file for stage 2>
+```
+
+## Acknowledgement
+
+Thanks a lot to all the authors for sharing their codes which played invaluable roles in our work!
+
+- [3DGS]((https://github.com/graphdeco-inria/gaussian-splatting)
+- [Rasterizer](https://github.com/ashawkey/diff-gaussian-rasterization)
+
+## Citation
+
+```
+@inproceedings{das2024neural,
+  title={Neural parametric gaussians for monocular non-rigid object reconstruction},
+  author={Das, Devikalyan and Wewer, Christopher and Yunus, Raza and Ilg, Eddy and Lenssen, Jan Eric},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10715--10725},
+  year={2024}
+}
 ```
