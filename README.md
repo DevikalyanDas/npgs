@@ -63,8 +63,8 @@ python stage_2/render.py \
 
 Thanks a lot to all the authors for sharing their codes which played invaluable roles in our work!
 
-- [3DGS]((https://github.com/graphdeco-inria/gaussian-splatting)
-- [Rasterizer](https://github.com/ashawkey/diff-gaussian-rasterization)
+- [3DGS]((https://github.com/graphdeco-inria/gaussian-splatting))
+- [Rasterizer]((https://github.com/ashawkey/diff-gaussian-rasterization))
 
 ## Citation
 
