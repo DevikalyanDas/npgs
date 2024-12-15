@@ -1,0 +1,23 @@
+#npg params
+
+norm_data: 200 # same as num_frames except for synthetic human
+
+## Basis and MLP
+weight_init_std: 0.01
+key_points_no: 5000
+num_candidate: 1000
+shape_basis_size: 47
+color_basis_size: 25
+n_fully_connected: 512
+initial_dim: 1  # time dimension
+n_layers: 6
+phi_vector_dim: 50
+num_positional_encoding: 6
+
+## weight of regularization for the points
+w_reg = 0.1
+
+## only true for the static background in the dnerf dataset
+use_bgkd: False
+
+
