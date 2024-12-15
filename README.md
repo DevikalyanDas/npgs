@@ -47,16 +47,18 @@ To train Gaussian splatting for skinning Gaussians on top of the estimated point
 ```
 python stage_2/train.py \
     -s <path to the dataset directory> \
-    -m <path to save the experiments/logs>
-    --npg_config <path to the config file for stage 2>
+    -m <path to save the experiments/logs> \
+    --npg_config <path to the config file for stage 2> \
+    --npg_ckp <path to stage 1 checkpoint>
 ```
 ### 7. Stage 2: Render Views 
 To train Gaussian splatting for skinning Gaussians on top of the estimated point cloud.
 ```
 python stage_2/render.py \
     -s <path to the dataset directory> \
-    -m <path to save the experiments/logs>
-    --npg_config <path to the config file for stage 2>
+    -m <path to save the experiments/logs> \
+    --npg_config <path to the config file for stage 2> \
+    --npg_ckp <path to stage 1 checkpoint>
 ```
 
 ## Acknowledgement
