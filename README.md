@@ -13,6 +13,8 @@ Use the below command
 ```
 mamba env create --file env.yaml
 ```
+Install the cuda-based gaussian rasterizer from [here](https://github.com/ashawkey/diff-gaussian-rasterization) and simple_knn from [here](https://github.com/graphdeco-inria/gaussian-splatting/tree/main/submodules). These will be required for stage 2.
+
 ### 2. Download model weights
 You can check the test images used in the paper and also download model weights from this [link](https://drive.google.com/drive/folders/1CeRQDJ5hJXXtYYf3AzDzMpsE8cEQ8qO1?usp=sharing)
 
