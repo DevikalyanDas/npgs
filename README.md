@@ -50,7 +50,7 @@ python stage_2/train.py \
     -m <path to save the experiments/logs>
     --npg_config <path to the config file for stage 2>
 ```
-### . Stage 2: Render Gaussian splatting 
+### 7. Stage 2: Render Views 
 To train Gaussian splatting for skinning Gaussians on top of the estimated point cloud.
 ```
 python stage_2/render.py \
