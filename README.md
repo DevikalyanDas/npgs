@@ -5,8 +5,6 @@
 Saarland University, Saarland Informatics Campus, Germany and Max Planck Institute for Informatics, Saarland Informatics Campus, Germany
 ### [Project Page](https://geometric-rl.mpi-inf.mpg.de/npg/)| [arXiv Paper](https://arxiv.org/abs/2312.01196)
 
-#### The source code release is ongoing. Sorry for the delay. Please have patience!!!
-
 ## Setup (with [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html))
 ### 1. Install dependencies
 Use the below command
