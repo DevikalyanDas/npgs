@@ -3,7 +3,9 @@
 [Devikalyan Das](https://devikalyandas.github.io/), [Christopher Wewer](https://geometric-rl.mpi-inf.mpg.de/people/Wewer.html), [Raza Yunus](https://www.utn.de/person/raza-yunus/), [Eddy Ilg](https://www.utn.de/person/eddy-ilg/), [Jan Eric Lenssen](https://geometric-rl.mpi-inf.mpg.de/people/lenssen.html)
 
 Saarland University, Saarland Informatics Campus, Germany and Max Planck Institute for Informatics, Saarland Informatics Campus, Germany
-### [Project Page](https://geometric-rl.mpi-inf.mpg.de/npg/)|[![arXiv](https://img.shields.io/badge/arXiv-2403.16292-b31b1b.svg)](https://arxiv.org/abs/2312.01196)
+### [![arXiv](https://img.shields.io/badge/arXiv-2403.16292-b31b1b.svg)](https://arxiv.org/abs/2312.01196)
+### [Project Page](https://geometric-rl.mpi-inf.mpg.de/npg/)
+
 ## Setup (with [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html))
 ### 1. Install dependencies
 Use the below command
